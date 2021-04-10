@@ -6,7 +6,7 @@ try:
 except Exception as e:
     print("some modeuls are missing {}".format(e))
 
-class FlaskTest(unittest.TestCase):
+class UserRouterTest(unittest.TestCase):
 
     def setUp(self):
         self.data={
@@ -18,9 +18,6 @@ class FlaskTest(unittest.TestCase):
         self.new ={
                 "email": "johndoe.lionbridge@email.com"
             }
-        
-
-
 
     #check status code
     def test_index(self):
@@ -52,5 +49,3 @@ class FlaskTest(unittest.TestCase):
         self.assertEqual(rv.status_code, 200)
         self.assertEqual(rv.content_type,"application/json")
 
-if __name__ == "__main__":
-    unittest.main()

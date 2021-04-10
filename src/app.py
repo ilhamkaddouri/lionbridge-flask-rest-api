@@ -3,9 +3,7 @@ from flask_restful import Api
 from db.db import initialize_db
 from models.user import User
 from db.config import config
-from quart import Quart
 from flask_cors import CORS
-import asyncio
 from router.router import UsersApi,UserApi
 
 app = Flask(__name__)
