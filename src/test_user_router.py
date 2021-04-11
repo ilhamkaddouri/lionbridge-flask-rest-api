@@ -1,10 +1,7 @@
-try:
-    from app import app
-    import unittest
-    import json
 
-except Exception as e:
-    print("some modeuls are missing {}".format(e))
+from app import app
+import unittest
+import json
 
 class UserRouterTest(unittest.TestCase):
 
